@@ -2,7 +2,9 @@ import argparse
 import os
 import torch
 from diffusers import DiffusionPipeline
-import kohya_ss.model_util as model_util
+import library.model_util as model_util
+
+#GPT messed up the import section. 
 
 def convert_model(args):
     load_dtype = torch.float16 if args.fp16 else None
