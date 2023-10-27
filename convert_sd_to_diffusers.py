@@ -44,7 +44,7 @@ def load_sd_model(args, is_load_checkpoint, load_dtype):
     print(f"Loading {model_load_message}: {args.model_to_load}")
 
     if is_load_checkpoint:
-        loaded_model_data = load_sd_model(args)
+        loaded_model_data = load_sd_model(args, is_load_checkpoint, load_dtype)
     else:
         loaded_model_data = load_sd_model(args, load_dtype)
 
