@@ -102,9 +102,40 @@ def increment_filename(filename):
 
 def setup_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model_to_load", type=str, required=True, help="model to load: checkpoint file or Diffusion model's directory")
-    parser.add_argument("--fp16", action="store_true", help="load as fp16 (Diffusers only)")
-    parser.add_argument("--save_precision_as", type=str, default="no", choices=["fp16", "bf16", "float"], help="save precision")
-    parser.add_argument("--epoch", type=int, default=0, help="epoch to write to checkpoint")
-    parser.add_argument("--global_step", type=int, default=0, help="global_step to write to checkpoint")
-    parser.add_argument("--reference_model", type=str, default="runwayml/stable-diffusion-v1-5", help="reference Diffusers
+    parser.add_argument(
+        "--model_to_load",
+        type=str,
+        required=True,
+        help="model to load: checkpoint file or Diffusion model's directory",
+    )
+    parser.add_argument(
+        "--fp16",
+        action="store_true",
+        help="load as fp16 (Diffusers only)"
+    )
+    parser.add_argument(
+        "--save_precision_as",
+        type=str,
+        default="no",
+        choices=["fp16", "bf16", "float"],
+        help="save precision"
+    )
+    parser.add_argument(
+        "--epoch",
+        type=int,
+        default=0,
+        help="epoch to write to checkpoint"
+    )
+    parser.add_argument(
+        "--global_step",
+        type=int,
+        default=0,
+        help="global_step to write to checkpoint"
+    )
+    parser.add_argument(
+        "--reference_model",
+        type=str,
+        default="runwayml/stable-diffusion-v1-5",
+        help="reference Diffusers model to copy scheduler/tokenizer config from, used when saving as Diffusers format, default is `runwayml/stable-diffusion-v1-5` or `stabilityai/stable-diffusion-2-1`"
+    )
+    return parser
