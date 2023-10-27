@@ -5,7 +5,7 @@
 import argparse
 import os
 import torch
-from diffusers import StableDiffusionpipeline
+from diffusers import StableDiffusionPipeline
 import library.model_util as model_util
 
 
