@@ -44,14 +44,14 @@ def load_sd_model(args, is_load_checkpoint, load_dtype):
     print(f"Loading {model_load_message}: {args.model_to_load}")
 
     if is_load_checkpoint:
-        loaded_model_data = load_from_sd_checkpoint(args)
+        loaded_model_data = load_models_from_stable_diffusion_checkpoint(args)
     else:
-        loaded_model_data = load_sd_from_diffusers(args, load_dtype)
+        loaded_model_data = load_models_from_stable_diffusion_checkpoint (args, load_dtype)
 
     return loaded_model_data
 
 def load_from_sd_checkpoint(args):
-    text_encoder1, vae, unet, _, _ = model_util.load_models_from_sd_checkpoint(
+    text_encoder1, vae, unet, _, _ = model_util.load_models_from_stable_diffusion_checkpoint(
         "stable-diffusion-v1-5", args.model_to_load, "cpu"
     )
     return text_encoder1, vae, unet
