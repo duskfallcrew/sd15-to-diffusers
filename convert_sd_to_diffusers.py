@@ -17,7 +17,7 @@ def convert_model(args):
     is_load_checkpoint = determine_load_checkpoint(args.model_to_load)
     is_save_checkpoint = not is_load_checkpoint  # reverse of load model
 
-    loaded_model_data = load_model(args, is_load_checkpoint, load_dtype)
+    loaded_model_data = load_sd_model(args, is_load_checkpoint, load_dtype)
     convert_and_save_sd_model(args, is_save_checkpoint, loaded_model_data, save_dtype)
 
 def get_save_dtype(args):
@@ -44,9 +44,9 @@ def load_sd_model(args, is_load_checkpoint, load_dtype):
     print(f"Loading {model_load_message}: {args.model_to_load}")
 
     if is_load_checkpoint:
-        loaded_model_data = load_model(args)
+        loaded_model_data = load_sd_model(args)
     else:
-        loaded_model_data = load_model(args, load_dtype)
+        loaded_model_data = load_sd_model(args, load_dtype)
 
     return loaded_model_data
 
