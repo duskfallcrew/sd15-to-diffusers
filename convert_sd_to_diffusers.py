@@ -80,8 +80,8 @@ def save_sd_as_checkpoint(args, text_encoder1, vae, unet, save_dtype):
     logit_scale = None
     ckpt_info = None
 
-    key_count = sdxl_model_util.save_stable_diffusion_checkpoint(
-        args.model_to_save, text_encoder1, text_encoder2, unet, args.epoch, args.global_step, ckpt_info, vae, logit_scale, save_dtype
+    key_count = model_util.save_stable_diffusion_checkpoint(
+        args.model_to_save, text_encoder1, unet, args.epoch, args.global_step, ckpt_info, vae, logit_scale, save_dtype
         )
     print(f"Model saved. Total converted state_dict keys: {key_count}")
 
