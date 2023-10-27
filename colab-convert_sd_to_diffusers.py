@@ -9,47 +9,6 @@ from diffusers import StableDiffusionpipeline
 import library.model_util as model_util
 
 
-root_dir = "/content"
-repo_dir = os.path.join(root_dir, "kohya-trainer")
-models_dir = os.path.join(root_dir, "models")
-tools_dir = os.path.join(repo_dir, "tools")
-vae_dir = os.path.join(root_dir, "vae")
-
-# Repository details
-repo_url = "https://github.com/kohya-ss/sd-scripts" 
-branch = "main"  
-
-def clone_repo(url, dir, branch):
-    if not os.path.exists(dir):
-       !git clone -b {branch} {url} {dir}
-
-def setup_directories(dirs):
-    for dir in dirs:
-        os.makedirs(dir, exist_ok=True)
-
-def install_dependencies():
-    t4_xformers_wheel = "https://github.com/Linaqruf/colab-xformers/releases/download/0.0.20/xformers-0.0.20+1d635e1.d20230519-cp310-cp310-linux_x86_64.whl"
-    gpu_info = getoutput('nvidia-smi')
-    !apt install aria2
-    !pip install -q --upgrade diffusers[torch]==0.18.2 transformers==4.30.2 einops==0.6.0 open-clip-torch==2.20.0 invisible-watermark -e .
-    !pip install -q xformers==0.0.20
-    !pip install -q huggingface-hub
-
-def prepare_environment():
-    os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
-    os.environ["SAFETENSORS_FAST_GPU"] = "1"
-    os.environ["PYTHONWARNINGS"] = "ignore"
-    os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "garbage_collection_threshold:0.9,max_split_size_mb:512"
-    os.environ["TCMALLOC_AGGRESSIVE_DECOMMIT"] = "t"
-    os.environ["CUDA_MODULE_LOADING"] = "LAZY"
-
-def main():
-    os.chdir(root_dir)
-    clone_repo(repo_url, repo_dir, branch)
-    os.chdir(repo_dir)
-    setup_directories([repo_dir, models_dir, tools_dir, vae_dir])
-    install_dependencies()
-    prepare_environment()
 
 def convert_model(args):
     load_dtype = torch.float16 if args.fp16 else None
