@@ -81,6 +81,14 @@ def save_as_diffusers(args, text_encoder1, vae, unet, save_dtype):
     )
     print(f"Model saved as {save_dtype}.")
 
+def increment_filename(filename):
+    base, ext = os.path.splitext(filename)
+    counter = 1
+    while os.path.exists(filename):
+        filename = f"{base}({counter}){ext}"
+        counter += 1
+    return filename
+
 def get_save_path(args, is_save_checkpoint):
     basename = os.path.splitext(args.model_to_load)[0]
     if is_save_checkpoint:
