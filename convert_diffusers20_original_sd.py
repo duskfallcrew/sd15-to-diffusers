@@ -112,13 +112,13 @@ def setup_parser() -> argparse.ArgumentParser:
     )
 
     parser.add_argument(
-        "model_to_load",
+        "--model_to_load",
         type=str,
         default=None,
         help="model to load: checkpoint file or Diffusers model's directory / 読み込むモデル、checkpointかDiffusers形式モデルのディレクトリ",
     )
     parser.add_argument(
-        "model_to_save",
+        "--model_to_save",
         type=str,
         default=None,
         help="model to save: checkpoint (with extension) or Diffusers model's directory (without extension) / 変換後のモデル、拡張子がある場合はcheckpoint、ない場合はDiffusesモデルとして保存",
