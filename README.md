@@ -1,8 +1,8 @@
 
 # **SD 1.5 Model Converter**
-[![](https://img.shields.io/static/v1?message=Open%20in%20Colab&logo=googlecolab&labelColor=5c5c5c&color=0f80c1&label=%20&style=flat)](https://github.com/kieranxsomer/convert-scripts/blob/main/Converter_SD1_5_V2_Duct_TapeVersion.ipynb)
-
-
+<a target="_blank" href="https://colab.research.google.com/github/kieranxsomer/convert-scripts/blob/main/Converter_SD1_5_V2_Duct_TapeVersion.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
  **A Colab Notebook To Convert SD 1.5 Checkpoint to Diffusers format**
 
 But a horribly duct taped edition. THIS IS IN ALPHA STAGES, WILL BE PATCHING THE CODE AS I GO ALONG.
