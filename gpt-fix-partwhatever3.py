@@ -3,6 +3,8 @@ import os
 import torch
 from diffusers import DiffusionPipeline
 import library.model_util as model_util
+import sys
+sys.path.append('/content/kohya-trainer/library') #if you're on vast or runpod, i'll see if i can't make a different script
 
 def convert_model(args):
     load_dtype = torch.float16 if args.fp16 else None
