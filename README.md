@@ -5,6 +5,8 @@
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=page.id=kieranxsomer.sd15-to-diffusers)
+
  **A Colab Notebook To Convert SD 1.5 Checkpoint to Diffusers format**
 
 But a horribly duct taped edition. THIS IS IN ALPHA STAGES, WILL BE PATCHING THE CODE AS I GO ALONG.
@@ -39,7 +41,7 @@ RIGHT NOW THE INSTRUCTIONS ARE AS FOLLOWS:
 
 ***Linaqruf @ Github***: https://github.com/Linaqruf
 
-![visitors](https://visitor-badge.glitch.me/badge?page_id=linaqruf.lora-dreambooth) [![](https://dcbadge.vercel.app/api/shield/850007095775723532?style=flat)](https://lookup.guru/850007095775723532) [![ko-fi](https://img.shields.io/badge/Support%20me%20on%20Ko--fi-F16061?logo=ko-fi&logoColor=white&style=flat)](https://ko-fi.com/linaqruf) <a href="https://saweria.co/linaqruf"><img alt="Saweria" src="https://img.shields.io/badge/Saweria-7B3F00?style=flat&logo=ko-fi&logoColor=white"/></a>
+ [![](https://dcbadge.vercel.app/api/shield/850007095775723532?style=flat)](https://lookup.guru/850007095775723532) [![ko-fi](https://img.shields.io/badge/Support%20me%20on%20Ko--fi-F16061?logo=ko-fi&logoColor=white&style=flat)](https://ko-fi.com/linaqruf) <a href="https://saweria.co/linaqruf"><img alt="Saweria" src="https://img.shields.io/badge/Saweria-7B3F00?style=flat&logo=ko-fi&logoColor=white"/></a>
 
 
  **Please use their main scripts for SDXL HERE:**
