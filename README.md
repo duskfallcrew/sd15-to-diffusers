@@ -1,9 +1,9 @@
 
 # **SD 1.5 Model Converter**
 
-Open in Colab:| [![](https://img.shields.io/static/v1?message=Open%20in%20Colab&logo=googlecolab&labelColor=5c5c5c&color=0f80c1&label=%20&style=flat)](https://github.com/duskfallcrew/sd15-to-diffusers/blob/main/Converter_SD1_5_V2_FIXED.ipynb)
-
-
+<a target="_blank" href="https://colab.research.google.com/github/duskfallcrew/sd15-to-diffusers/blob/main/Converter_SD1_5_V2_FIXED.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
 
 
  **A Colab Notebook To Convert SD 1.5 Checkpoint to Diffusers format**
