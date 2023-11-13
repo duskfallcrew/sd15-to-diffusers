@@ -1,21 +1,16 @@
 
 # **SD 1.5 Model Converter**
 
-<a target="_blank" href="https://colab.research.google.com/github/kieranxsomer/convert-scripts/blob/main/Converter_SD1_5_V2_Duct_TapeVersion.ipynb">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>
 
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=page.id=kieranxsomer.sd15-to-diffusers)
 
  **A Colab Notebook To Convert SD 1.5 Checkpoint to Diffusers format**
 
 But a horribly duct taped edition. THIS IS IN ALPHA STAGES, WILL BE PATCHING THE CODE AS I GO ALONG.
 
 
+---
 
-♻ -  USE ONLY FOR NOW: Converter_SD1_5_V2_Duct_TapeVersion.ipynb 
 
-♻ -  THIS IN THEORY SHOULD WORK ON VAST/RUNPOD - BUT IT IS UNTESTED, JUST CHANGE YOUR DIRECTORIES AS NEEDED!
 
 
 RIGHT NOW THE INSTRUCTIONS ARE AS FOLLOWS:
@@ -24,7 +19,11 @@ RIGHT NOW THE INSTRUCTIONS ARE AS FOLLOWS:
 
 ♻ - Download model - Direct port from Linaqruf.
 
-♻ - Open code panel, replace model details. - don't move after you hit play, it does it really quickly.
+♻ - Put your model details in.
+
+♻ - DUMP PATH = folder name
+
+♻ - If your downloaded model is safetensors please tick the box.
 
 ♻ - Check file browser, if the model/yourmodelhere looks like a diffusers format you're good to go!
 
@@ -65,8 +64,8 @@ Ahoy! you're looking for our Huggingface backup that is again patched from Linaq
 
 | Notebook Name | Description | Link |
 | --- | --- | --- |
-| [Huggingface Backup](https://colab.research.google.com/github/kieranxsomer/HuggingFace_Backup/blob/main/HuggingFace_Backup.ipynb) | backup checkpoints! | [![](https://img.shields.io/static/v1?message=Open%20in%20Colab&logo=googlecolab&labelColor=5c5c5c&color=0f80c1&label=%20&style=flat)](https://colab.research.google.com/github/kieranxsomer/HuggingFace_Backup/blob/main/HuggingFace_Backup.ipynb)
-| [1.5 Conversions](https://github.com/kieranxsomer/convert-scripts/blob/main/Converter_SD1_5_V2_Duct_TapeVersion.ipynb) | Convert to Diffusers! | [![](https://img.shields.io/static/v1?message=Open%20in%20Colab&logo=googlecolab&labelColor=5c5c5c&color=0f80c1&label=%20&style=flat)](https://github.com/kieranxsomer/convert-scripts/blob/main/Converter_SD1_5_V2_Duct_TapeVersion.ipynb)
+| [Huggingface Backup](https://colab.research.google.com/github/duskfallcrew/HuggingFace_Backup/blob/main/HuggingFace_Backup.ipynb) | backup checkpoints! | [![](https://img.shields.io/static/v1?message=Open%20in%20Colab&logo=googlecolab&labelColor=5c5c5c&color=0f80c1&label=%20&style=flat)](https://colab.research.google.com/github/duskfallcrew/HuggingFace_Backup/blob/main/HuggingFace_Backup.ipynb)
+
 ## Duskfall/ Earth & Dusk Socials
 ![Discord](https://img.shields.io/discord/1024442483750490222?label=Earth%26Dusk&style=plastic)
 
