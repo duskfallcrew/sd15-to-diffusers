@@ -256,9 +256,24 @@ os.chdir(root_dir)
 #@markdown Make sure you TICK SAFETENSORS or it won't convert.
 #@markdown Dump path is where you would like your model to be stored before uploading.
 
-checkpoint_path = "/content/models/RoadRashV15.fp16.safetensors" #@param {'type': 'string'}
-dump_path = "/content/models/RoadRashV15" #@param {'type': 'string'}
+checkpoint_path = "/models/modelname.safetensors" #@param {'type': 'string'}
+dump_path = "/models/modelname" #@param {'type': 'string'}
 from_safetensors = True  # @param {type: "boolean"}
+
+def convert_dict(config):
+    args = ""
+    for k, v in config.items():
+        if k.startswith("_"):
+            args += f'"{v}" '
+        elif isinstance(v, str):
+            args += f'--{k}="{v}" '
+        elif isinstance(v, bool) and v:
+            args += f"--{k} "
+        elif isinstance(v, float) and not isinstance(v, bool):
+            args += f"--{k}={v} "
+        elif isinstance(v, int) and not isinstance(v, bool):
+            args += f"--{k}={v} "
+    return args
 
 
 
@@ -316,9 +331,9 @@ def create_model_repo(api, user, orgs_name, model_name, make_private=False):
         api.create_repo(repo_id=repo_id, repo_type="model", private=make_private)
         print(f"Model repo '{repo_id}' didn't exist, creating repo")
     except HfHubHTTPError as e:
-        print(f"Model repo '{repo_id}' exists, skipping create repo")
+        print(f"♻ Repository existed,  '{repo_id}' exists, skipping create repo, head to upload.")
 
-    print(f"Model repo '{repo_id}' link: https://huggingface.co/{repo_id}\n")
+    print(f"♻ Repository created, head to upload. Model repo '{repo_id}' link: https://huggingface.co/{repo_id}\n")
 
     return repo_id
 
@@ -326,11 +341,6 @@ user, api = authenticate(write_token)
 
 if model_name:
     model_repo = create_model_repo(api, user, orgs_name, model_name, make_private)
-
-def main():
-    print(f"♻ Repository created, head to upload.")
-
-main()
 
 # @title ### ♻ **Upload to Huggingface**
 from huggingface_hub import HfApi
@@ -384,7 +394,7 @@ def upload_model(model_paths, is_folder: bool):
             commit_message=commit_message,
         )
 
-    success_notification = f"Upload successful. Check the model at https://huggingface.co/{model_repo}/tree/main"
+    success_notification = f"♻ Model upload complete, care to try again? Thanks for flying Stable Diffusion Airlines, you owe me five dollars.. Check the model at https://huggingface.co/{model_repo}/tree/main"
     print(success_notification)
 
 def upload():
@@ -394,8 +404,3 @@ def upload():
         upload_model(model_path, True)
 
 upload()
-
-def main():
-    print(f"♻ Model upload complete, care to try again? Thanks for flying Stable Diffusion Airlines, you owe me five dollars.")
-
-main()

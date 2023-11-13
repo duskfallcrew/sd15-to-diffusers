@@ -10,6 +10,24 @@
 
 But a horribly duct taped edition. THIS IS IN ALPHA STAGES, WILL BE PATCHING THE CODE AS I GO ALONG.
 
+Changes:
+
+Patched the conversion, that finally works without needing to edit a python command.
+
+Fixed an error from the original colab that didn't work - added back in  Linaqurf's config/dict code.
+
+Added fun, but snarky comments that print out after upload.
+
+KNowing this works on my one it should work on yours.
+
+Future ideas:
+
+- Looking to port PT to safetensors into the same notebook.
+- Looking to port inference for testing into the same notebook.
+- Looking to figure out how to convert a different vae.
+
+If you're interested in tipping please hit me up: https://ko-fi.com/duskfallcrew
+
 
 ---
 
