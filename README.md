@@ -64,7 +64,7 @@ Ahoy! you're looking for our Huggingface backup that is again patched from Linaq
 
 | Notebook Name | Description | Link |
 | --- | --- | --- |
-| [Huggingface Backup](https://colab.research.google.com/github/kieranxsomer/HuggingFace_Backup/blob/main/HuggingFace_Backup.ipynb) | backup checkpoints! | [![](https://img.shields.io/static/v1?message=Open%20in%20Colab&logo=googlecolab&labelColor=5c5c5c&color=0f80c1&label=%20&style=flat)](https://colab.research.google.com/github/kieranxsomer/HuggingFace_Backup/blob/main/HuggingFace_Backup.ipynb)
+| [Huggingface Backup](https://colab.research.google.com/github/duskfallcrew/HuggingFace_Backup/blob/main/HuggingFace_Backup.ipynb) | backup checkpoints! | [![](https://img.shields.io/static/v1?message=Open%20in%20Colab&logo=googlecolab&labelColor=5c5c5c&color=0f80c1&label=%20&style=flat)](https://colab.research.google.com/github/duskfallcrew/HuggingFace_Backup/blob/main/HuggingFace_Backup.ipynb)
 
 ## Duskfall/ Earth & Dusk Socials
 ![Discord](https://img.shields.io/discord/1024442483750490222?label=Earth%26Dusk&style=plastic)
