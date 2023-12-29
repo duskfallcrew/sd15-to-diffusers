@@ -12,13 +12,12 @@ But a horribly duct taped edition. THIS IS IN ALPHA STAGES, WILL BE PATCHING THE
 
 Changes:
 
-Patched the conversion, that finally works without needing to edit a python command.
+Updates:
 
-Fixed an error from the original colab that didn't work - added back in  Linaqurf's config/dict code.
+Patched the conversion, added snarky comments to the outputs.
+Our personal one has funny notes, feel free to patch and change at will.
 
-Added fun, but snarky comments that print out after upload.
-
-KNowing this works on my one it should work on yours.
+Added a fix keys for models that won't convert, and also added a patch for cleaning folders.
 
 Future ideas:
 
