@@ -10,7 +10,7 @@
 
 But a horribly duct taped edition. THIS IS IN ALPHA STAGES, WILL BE PATCHING THE CODE AS I GO ALONG.
 
-Changes:
+<a href="https://civitai.com/models/179789"> Check it out on Civitai here  </a> 
 
 Updates:
 
@@ -24,8 +24,12 @@ Future ideas:
 - Looking to port PT to safetensors into the same notebook.
 - Looking to port inference for testing into the same notebook.
 - Looking to figure out how to convert a different vae.
+- Looking to figure out how to manage to get the conversions to roll on google drive for more space options.
+- Porting it to VastAi/Runpod
 
 If you're interested in tipping please hit me up: https://ko-fi.com/duskfallcrew
+
+Also feel free to add your own code and rejig the notebook and upload your own version to your own repository, this is not going to be the first, it isn't the first - it's just since Camenduru's broke, we didn't have many options.  Yes, there's GUI for people to use NMKD i think uses a gui, but if you're on a Mac like me or don't have a decent GPU, this is a great option.
 
 
 ---
