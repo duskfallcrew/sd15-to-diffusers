@@ -1,9 +1,9 @@
 
 # **SD 1.5 Model Converter**
 
-<a target="_blank" href="https://colab.research.google.com/github/duskfallcrew/sd15-to-diffusers/blob/main/Converter_SD1_5_V2_FIXED.ipynb">
+[<a target="_blank" href="https://colab.research.google.com/github/duskfallcrew/sd15-to-diffusers/blob/main/Converter_SD1_5_V2_FIXED.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>
+</a>](https://colab.research.google.com/drive/1zAzdsaa2KQcF6W0V4eCLZ6eUO8hsDJTo?usp=sharing)
 
 
  **A Colab Notebook To Convert SD 1.5 Checkpoint to Diffusers format**
