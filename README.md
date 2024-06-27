@@ -1,13 +1,33 @@
 
 # **SD 1.5 Model Converter**
 
-
-> # **SD 1.5 Model Converter**
 > **A Colab Notebook To Convert SD 1.5 Checkpoint to Diffusers format**
 > This was patched heavily and recoded from the SDXL branch of Linaqruf's now archived colab. We're porting our patches to our github with gracious credit to the original coders.
 
+## Error - LIKELY NOT WORKING
+
+```
+
+convert_sdxl_to_diffusers.py not found, downloading...
+Traceback (most recent call last):
+  File "/content/convert_sdxl_to_diffusers.py", line 4, in <module>
+    from diffusers import StableDiffusionXLPipeline
+  File "/usr/local/lib/python3.10/dist-packages/diffusers/__init__.py", line 38, in <module>
+    from .models import (
+  File "/usr/local/lib/python3.10/dist-packages/diffusers/models/__init__.py", line 33, in <module>
+    from .controlnet_flax import FlaxControlNetModel
+  File "/usr/local/lib/python3.10/dist-packages/diffusers/models/controlnet_flax.py", line 25, in <module>
+    from .modeling_flax_utils import FlaxModelMixin
+  File "/usr/local/lib/python3.10/dist-packages/diffusers/models/modeling_flax_utils.py", line 45, in <module>
+    class FlaxModelMixin:
+  File "/usr/local/lib/python3.10/dist-packages/diffusers/models/modeling_flax_utils.py", line 194, in FlaxModelMixin
+    def init_weights(self, rng: jax.random.KeyArray) -> Dict:
+  File "/usr/local/lib/python3.10/dist-packages/jax/_src/deprecations.py", line 54, in getattr
+    raise AttributeError(f"module {module!r} has no attribute {name!r}")
+AttributeError: module 'jax.random' has no attribute 'KeyArray'
 
 
+```
 > ## **Instructions**
 
 
